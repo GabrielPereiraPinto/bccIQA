@@ -96,6 +96,7 @@ double Quality(int index)
 	
 	double iValue = 0;
 	scanf("%lf", &iValue);
+	printf("Valor digitado: %lf\n", iValue);
 	
 	return iValue;
 }
