@@ -17,7 +17,7 @@ double calculoPO4(double PO)
 	if(PO <= 10)
 		qs = 79.7 * pow(PO + 0.821, -1.15);
 	else if(PO > 10)
-		qs = 10;
+		qs = 5;
 		
 	printf("%lf", qs);
 	return qs;
