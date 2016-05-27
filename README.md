@@ -8,7 +8,7 @@ Através do Makefile digite ***make all***, irá ser gerado um arquivo "main" na
 
 - ***Rodando o executavel;***
 
-Pelo terminal vá até a raiz do projeto e digite o comando para rodar o arquivo "main". ***.\main***. Siga as instruções que serão exibidas no terminal digitando cada média e no final será dado o IQA.
+Pelo terminal vá até a raiz do projeto e digite o comando para rodar o arquivo "main" ***.\main***. Siga as instruções que serão exibidas no terminal digitando cada média e no final será dado o IQA.
 
 - ***Referências;***
 
