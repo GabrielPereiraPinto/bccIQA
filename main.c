@@ -42,7 +42,7 @@ void IQA() // Produtorio
 		
 		currIQA *= pot;
 		
-		//printf("index - %d / currIQA = %lf\n", i, pot);
+		printf("index - %d / currIQA = %lf\n", i, pot);
 	}
 	
 	//currIQA *= 100;
@@ -111,38 +111,40 @@ double Quality(int index)
 	scanf("%lf", &iValue);
 	printf("Valor digitado: %lf\n", iValue);
 	
+	double res = 0;
+	
 	switch(index)
 	{
 		case 0:
-			calculoST(iValue);
+			res = calculoST(iValue);
 		break;
 		case 1:
-			calculoCF(iValue);
+			res = calculoCF(iValue);
 		break;
 		case 2:
-			calculoPh(iValue);
+			res = calculoPh(iValue);
 		break;
 		case 3:
-			calculoDBO(iValue);
+			res = calculoDBO(iValue);
 		break;
 		case 4:
-			calculoNO3(iValue);
+			res = calculoNO3(iValue);
 		break;
 		case 5:
-			calculoPO4(iValue);
+			res = calculoPO4(iValue);
 		break;
 		case 6:
-			calculoVT(iValue);
+			res = calculoVT(iValue);
 		break;
 		case 7:
-			calculoTU(iValue);
+			res = calculoTU(iValue);
 		break;
 		case 8:
-			calculoOD(iValue);
+			res = calculoOD(iValue);
 		break;
 	}
 	
-	return iValue;
+	return res;
 }
 
 double Somatorio(int index)
@@ -159,7 +161,7 @@ double Somatorio(int index)
 	
 	//printf("Somatorio index %d / %lf\n", index, finalValue);
 	
-	return finalValue;
+	return pesos[index];
 }
 
 double calculoOD(double OD) //oxigenio dissolvido
@@ -186,7 +188,7 @@ double calculoOD(double OD) //oxigenio dissolvido
 	else
 		qs = 47.0;
 	
-	printf("%lf", qs);
+	//printf("%lf", qs);
 	
 	return qs;
 }
@@ -203,7 +205,7 @@ double calculoCF(double CF) // Coliformes fecais
 		qs = 3.0;
 
 	
-	printf("%lf", qs);
+	//printf("%lf", qs);
 	
 	return qs;
 }
@@ -223,7 +225,7 @@ double calculoPh(double pH) //ph
 	else
 		qs = 3.0;
 	
-	printf("%lf", qs);
+	//printf("%lf", qs);
 	
 	return qs;
 }
@@ -237,7 +239,7 @@ double calculoDBO(double DBO) // Demanda Bioquímica de Oxigênio
 	else
 		qs = 30.0;
 	
-	printf("%lf", qs);
+	//printf("%lf", qs);
 	
 	return qs;
 }
@@ -246,7 +248,7 @@ double calculoVT(double VT)//temperatura
 {
 	double qs = 93; //clima br constante para o estudado
 	
-	printf("%lf", qs);
+	//printf("%lf", qs);
 	return qs;
 }
 
@@ -263,7 +265,7 @@ double calculoNO3(double NO3)// nitrogenio total
 	else
 		qs = 1.0;
 	
-	printf("%lf", qs);
+	//printf("%lf", qs);
 	
 	return qs;
 }
@@ -277,7 +279,7 @@ double calculoPO4(double PO) // fosfato
 	else if(PO > 10)
 		qs = 5;
 		
-	printf("%lf", qs);
+	//printf("%lf", qs);
 	
 	return qs;
 }
@@ -291,7 +293,7 @@ double calculoTU(double Tu)// turbidez
 	else
 		qs = 5;
 		
-	printf("%lf", qs);
+	//printf("%lf", qs);
 	return qs;
 }
 
@@ -305,6 +307,6 @@ double calculoST(double ST)//solidos ou residuos total
 		qs = 30;
 
 		
-	printf("%lf", qs);
+	//printf("%lf", qs);
 	return qs;
 }
