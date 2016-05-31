@@ -304,7 +304,7 @@ double calculoST(double ST)//solidos ou residuos total
 	if(ST <= 500)
 		qs = 133.17 * pow(E, -0.0027 * ST) - 53.17 * pow(E,- 0.0141 * ST) + ((- 6.2 * pow(E, - 0.00462 * ST)) * sin(0.0146 * ST));
 	else
-		qs = 30;
+		qs = 3.0;
 
 		
 	//printf("%lf", qs);
